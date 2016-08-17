@@ -7,38 +7,63 @@
     android:layout_height="match_parent"
     android:id="@+id/constraintLayout">
 
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="0dp"
         android:layout_height="120dp"
-        tools:text="primary text"
+        android:text="primary text"
         android:textSize="20sp"
         android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
         app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:gravity="center"
-        tools:text="secondary text"
+        android:text="secondary text"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginStart="8dp"
         app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        android:layout_marginLeft="8dp"
         app:layout_constraintRight_toLeftOf="@+id/guideline"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView1"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
-        android:layout_height="511dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="192dp"
         tools:layout_editor_absoluteY="0dp"
         app:layout_constraintGuide_Percent="50" />
+
+    <ImageView
+        android:id="@+id/img"
+        app:srcCompat="@drawable/singapore"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout" />
+
 
 </android.support.constraint.ConstraintLayout>

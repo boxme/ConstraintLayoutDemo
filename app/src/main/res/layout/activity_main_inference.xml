@@ -53,7 +53,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/activity_main_inference"
         android:layout_marginBottom="16dp"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <TextView
         android:text="@string/singapore"
@@ -185,7 +185,8 @@
         tools:layout_constraintRight_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         android:layout_marginBottom="8dp"
-        tools:layout_constraintBottom_creator="1" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintVertical_bias="0.56" />
 
 
 </android.support.constraint.ConstraintLayout>
